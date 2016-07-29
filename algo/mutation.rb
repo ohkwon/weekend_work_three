@@ -4,6 +4,20 @@
 
 def mutation?(base_word, mutation)
 
+  value = false
+
+  array = mutation.split(//)
+
+  array.each do |char|
+    if base_word.include? char
+      value = true
+    else
+      value = false
+    end
+  end
+
+  return value   
+
 end
 
 # Driver code - don't touch anything below this line.
