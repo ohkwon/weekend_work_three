@@ -4,6 +4,17 @@
 
 def sum_of_range(array)
 
+  low_num = array.sort[0]
+  high_num = array.sort[1]
+  sum = 0
+
+  until low_num > high_num
+    sum += low_num
+    low_num += 1
+  end
+
+  return sum
+
 end
 
 # Driver code - don't touch anything below this line.
